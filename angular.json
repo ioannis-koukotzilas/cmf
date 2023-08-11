@@ -31,7 +31,9 @@
               "src/styles/main.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/marquee3000/marquee3k.min.js"
+            ]
           },
           "configurations": {
             "production": {

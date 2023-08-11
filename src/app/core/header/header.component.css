@@ -1,5 +1,21 @@
 .site-header > .container {
-    max-width: var(--max-w-full);
-    margin: 0 auto;
-    padding: 1.5rem 24px;
+  max-width: var(--max-w-full);
+  margin: 0 auto;
+  padding: 1.5rem 24px;
+}
+
+.site-header .site-title svg {
+  width: 100%;
+  max-width: 275px;
+  fill: rgba(var(--color-light), 1);
+}
+
+.site-header .site-title:visited svg {
+  fill: rgba(var(--color-light), 1);
+}
+
+.site-header .site-title:hover svg,
+.site-header .site-title:focus svg,
+.site-header .site-title:active svg {
+  fill: rgba(var(--color-light), 0.75);
 }

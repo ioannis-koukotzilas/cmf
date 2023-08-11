@@ -22,7 +22,7 @@ html {
 --------------------------------------------- */
 
 html {
-  font-size: 15px;
+  font-size: 24px;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
@@ -33,10 +33,12 @@ input,
 select,
 optgroup,
 textarea {
-  color: rgba(var(--color-dark), 1);
+  color: rgba(var(--color-light), 1);
   font-family: var(--font-sans-extended);
+  font-weight: var(--font-light);
   font-size: var(--font-base);
   line-height: var(--leading-base);
+  text-transform: uppercase;
 }
 
 h1,
@@ -141,7 +143,7 @@ address {
 --------------------------------------------- */
 body {
   min-height: 100vh;
-  background: #ccc;
+  background: rgba(var(--color-dark), 1);
 }
 
 hr {
@@ -192,17 +194,17 @@ table {
 a {
   display: inline-block;
   text-decoration: none;
-  color: rgba(var(--color-dark), 1);
+  color: rgba(var(--color-light), 1);
 }
 
 a:visited {
-  color: rgba(var(--color-dark), 1);
+  color: rgba(var(--color-light), 1);
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: rgba(var(--color-dark), 0.75);
+  color: rgba(var(--color-light), 0.75);
   outline: none;
 }
 
@@ -380,27 +382,32 @@ textarea::placeholder {
 
 .btn {
   padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 100rem;
 }
 
-.btn-symbol {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.btn-symbol .symbol {
-  font-size: var(--font-xl);
-}
-
-.btn-dark {
-  background-color: rgba(var(--bg-dark), 1);
+.btn-transparent {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(var(--color-light), 1);
   color: rgba(var(--color-light), 1);
 }
 
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-  background-color: rgba(var(--bg-dark), 0.75);
+.btn-transparent:visited {
+  color: rgba(var(--color-light), 1);
+  border-color: rgba(var(--color-light), 1);
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus,
+.btn-transparent:active {
+  border-color: rgba(var(--color-light), 0.75);
+  color: rgba(var(--color-light), 0.75);
+}
+
+.btn-dark {
+  background-color: rgba(var(--color-dark), 1);
   color: rgba(var(--color-light), 1);
 }
 
@@ -408,19 +415,42 @@ textarea::placeholder {
   color: rgba(var(--color-light), 1);
 }
 
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+  background-color: rgba(var(--color-dark), 0.75);
+  color: rgba(var(--color-light), 1);
+}
+
 .btn-light {
-  background-color: rgba(var(--bg-light), 1);
+  background-color: rgba(var(--color-light), 1);
+  color: rgba(var(--color-dark), 1);
+}
+
+.btn-light:visited {
   color: rgba(var(--color-dark), 1);
 }
 
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
-  background-color: rgba(var(--bg-light), 0.75);
+  background-color: rgba(var(--color-light), 0.75);
   color: rgba(var(--color-dark), 1);
 }
 
-.btn-light:visited {
-  color: rgba(var(--color-dark), 1);
+.btn-primary {
+  background-color: rgba(var(--color-primary), 1);
+  color: rgba(var(--color-light), 1);
+}
+
+.btn-primary:visited {
+  color: rgba(var(--color-primary), 1);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: rgba(var(--color-primary), 0.75);
+  color: rgba(var(--color-light), 1);
 }
 

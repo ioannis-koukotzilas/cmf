@@ -1,0 +1,27 @@
+.program > .container {
+  max-width: var(--max-w-full);
+  margin: 1.5rem auto;
+  padding: 0 24px;
+}
+
+.program .days ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+
+.program .days {
+  margin: 1.5rem 0;
+  padding-bottom: 0.75rem;
+}
+
+.program .days .btn.selected {
+  background-color: rgba(var(--color-light), 1);
+  color: rgba(var(--color-dark), 1);
+}
+
+.program .day-info ul {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}

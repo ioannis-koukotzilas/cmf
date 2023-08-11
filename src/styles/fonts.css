@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
+/* GT America Extended
+--------------------------------------------- */
+
+@font-face {
+  font-family: 'GT America Extended';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/assets/fonts/gt-america/extended/GT-America-LCGV-Extended-Thin.woff2') format('woff2'), url('/assets/fonts/gt-america/extended/GT-America-LCGV-Extended-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GT America Extended';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/gt-america/extended/GT-America-LCGV-Extended-Light.woff2') format('woff2'), url('/assets/fonts/gt-america/extended/GT-America-LCGV-Extended-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GT America Extended';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/gt-america/extended/GT-America-LCGV-Extended-Regular.woff2') format('woff2'), url('/assets/fonts/gt-america/extended/GT-America-LCGV-Extended-Regular.woff') format('woff');
+}

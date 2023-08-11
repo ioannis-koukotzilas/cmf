@@ -1,0 +1,13 @@
+.event-details > .container {
+  max-width: var(--max-w-full);
+  margin: 1.5rem auto;
+  padding: 0 24px;
+}
+
+/* .event-details .date {
+  font-size: var(--font-4xl);
+}
+
+.event-details .location {
+  font-size: var(--font-2xl);
+} */
