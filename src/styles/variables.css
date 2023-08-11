@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+# Theme Variables
+--------------------------------------------------------------*/
+
+/* Root
+--------------------------------------------- */
+:root {
+  --font-sans-standard: "GT Pressura Standard", sans-serif; /* Weight range is: Regular 400, Medium 500, Bold 700 */
+  --font-sans-extended: "GT Pressura Extended", sans-serif; /* Weight range is: Regular 400, Medium 500, Bold 700 */
+  --font-symbol: "Material Icons Outlined", sans-serif;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 1.875rem;
+  --font-4xl: 2.25rem;
+  --font-5xl: 3rem;
+  --font-6xl: 3.75rem;
+  --font-7xl: 4.5rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-base: 1.5;
+
+  --bg-white: 255, 255, 255; /* #ffffff */
+  --bg-black: 0, 0, 0; /* #000000 */
+  --bg-light: 248, 241, 225; /* #f5f5f5 */
+  --bg-dark: 63, 69, 53; /* #141414 */
+  --bg-base: 241, 244, 226; /* #fffefa */
+  --bg-primary: #ff6633;
+  --bg-secondary: #00cccc;
+
+  --color-white: 255, 255, 255; /* #ffffff */
+  --color-black: 0, 0, 0; /* #000000 */
+  --color-light: 248, 241, 225; /* #f5f5f5 */
+  --color-dark: 63, 69, 53; /* #141414 */
+  --color-primary: #00cccc;
+  --color-secondary: #ff6633;
+
+  --rounded: 0.25rem;
+
+  --max-w-base: 2560px;
+  --max-w-xs: 480px;
+  --max-w-sm: 540px;
+  --max-w-md: 720px;
+  --max-w-lg: 960px;
+  --max-w-xl: 1140px;
+  --max-w-2xl: 1320px;
+  --max-w-full: 100%;
+}

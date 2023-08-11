@@ -25,6 +25,10 @@
               "src/assets"
             ],
             "styles": [
+              "src/styles/normalize.css",
+              "src/styles/variables.css",
+              "src/styles/fonts.css",
+              "src/styles/main.css",
               "src/styles.css"
             ],
             "scripts": []

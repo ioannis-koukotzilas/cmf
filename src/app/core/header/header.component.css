@@ -1,0 +1,5 @@
+.site-header > .container {
+    max-width: var(--max-w-full);
+    margin: 0 auto;
+    padding: 1.5rem 24px;
+}

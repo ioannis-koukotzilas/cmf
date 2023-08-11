@@ -1,6 +1,12 @@
-<p>header works!</p>
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">
+      <a routerLink="/">{{ appTitle }}</a>
+    </h1>
 
-<nav>
-    <a routerLink="/main">Main</a>
-    <a routerLink="/contact">Contact</a>
-</nav>
+    <nav class="main-nav">
+      <a routerLink="/">Main</a>
+      <a routerLink="/contact">Contact</a>
+    </nav>
+  </div>
+</header>
