@@ -9,6 +9,7 @@ export class ProgramDataService {
     {
       id: 1,
       name: 'Τρίτη 05/09',
+      date: new Date(2023, 7, 10), // September 5, 2023 (months are 0-indexed in JS)
       events: [
         {
           type: 'concerts',
@@ -22,6 +23,7 @@ export class ProgramDataService {
     {
       id: 2,
       name: 'Τετάρτη 06/09',
+      date: new Date(2023, 7, 11),
       events: [
         {
           type: 'workshops',
@@ -42,6 +44,7 @@ export class ProgramDataService {
     {
       id: 3,
       name: 'Πέμπτη 07/09',
+      date: new Date(2023, 7, 12),
       events: [
         {
           type: 'workshops',

@@ -16,8 +16,21 @@ export class ProgramComponent {
 
   ngOnInit(): void {
     this.days = this.programDataService.getDays();
-    this.selectedDay = this.days[0]; // Select the first day by default
-  }
+
+    const currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0); // set to start of day for accurate comparison
+
+    const matchingDay = this.days.find(day => 
+        day.date && new Date(day.date.toString()).toDateString() === currentDate.toDateString()
+    );
+
+    if (matchingDay) {
+        this.selectedDay = matchingDay;
+    } else {
+        this.selectedDay = this.days[0]; // default to the first day
+    }
+}
+
 
     selectDay(day: any) {
         this.selectedDay = day;
