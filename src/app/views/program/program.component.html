@@ -1,17 +1,15 @@
 <div class="program">
-
   <div class="container">
-
     <div class="days">
       <ul>
-        <li class="btn btn-transparent" *ngFor="let day of days" [class.selected]="day === selectedDay" (click)="selectDay(day)">
+        <li class="btn btn-transparent" *ngFor="let day of days" [class.selected]="day === selectedDay"
+          (click)="selectDay(day)">
           {{ day.name }}
         </li>
       </ul>
     </div>
-    
-    <div class="day-info" *ngIf="selectedDay">
 
+    <div class="day-info" *ngIf="selectedDay">
       <div *ngFor="let event of selectedDay.events">
         <h4 *ngIf="event.type === 'workshops'">Εργαστήρια - {{ selectedDay.name }}</h4>
         <h4 *ngIf="event.type === 'concerts'">Συναυλίες - {{ selectedDay.name }}</h4>
@@ -22,7 +20,5 @@
         </ul>
       </div>
     </div>
-
   </div>
-
 </div>

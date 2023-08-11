@@ -3,15 +3,15 @@ import { Title } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  selector: 'app-info',
+  templateUrl: './info.component.html',
+  styleUrls: ['./info.component.css']
 })
-export class MainComponent {
+export class InfoComponent {
 
   constructor(private titleService: Title) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle(`${environment.appTitle} - Αρχική`);
+    this.titleService.setTitle(`${environment.appTitle} - Πληροφορίες & Εισιτήρια`);
   }
 }

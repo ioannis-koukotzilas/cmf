@@ -31,9 +31,7 @@ export class ProgramComponent {
     }
   }
 
-
   selectDay(day: any) {
     this.selectedDay = day;
   }
-
 }

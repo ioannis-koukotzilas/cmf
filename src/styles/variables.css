@@ -5,9 +5,9 @@
 /* Root
 --------------------------------------------- */
 :root {
-  --font-sans-standard: "GT Pressura Standard", sans-serif; /* Weight range is: Regular 400, Medium 500, Bold 700 */
-  --font-sans-extended: "GT America Extended", sans-serif; /* Weight range is: Regular 400, Medium 500, Bold 700 */
-  --font-symbol: "Material Icons Outlined", sans-serif;
+  --font-sans-standard: sans-serif;
+  --font-sans-extended: "GT America Extended", sans-serif;
+  --font-symbol: sans-serif;
 
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
@@ -32,10 +32,10 @@
   --leading-snug: 1.375;
   --leading-base: 1.5;
 
-  --color-white: 255, 255, 255; /* #ffffff */
-  --color-black: 0, 0, 0; /* #000000 */
-  --color-light: 249, 249, 249; /* #f5f5f5 */
-  --color-dark: 33, 33, 33; /* #141414 */
+  --color-white: 255, 255, 255;
+  --color-black: 0, 0, 0;
+  --color-light: 249, 249, 249;
+  --color-dark: 33, 33, 33;
   --color-primary: 0, 145, 217;
 
   --rounded: 0.25rem;

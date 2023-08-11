@@ -7,13 +7,11 @@
 .program .days ul {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 1rem;
-  row-gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .program .days {
   margin: 1.5rem 0;
-  padding-bottom: 0.75rem;
 }
 
 .program .days .btn.selected {

@@ -4,10 +4,10 @@
   padding: 0 24px;
 }
 
-/* .event-details .date {
-  font-size: var(--font-4xl);
+.event-details .date {
+  font-size: var(--font-2xl);
 }
 
 .event-details .location {
   font-size: var(--font-2xl);
-} */
+}

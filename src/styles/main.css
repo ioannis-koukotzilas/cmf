@@ -22,9 +22,45 @@ html {
 --------------------------------------------- */
 
 html {
-  font-size: 24px;
+  font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
 }
 
 body,
@@ -37,7 +73,7 @@ textarea {
   font-family: var(--font-sans-extended);
   font-weight: var(--font-light);
   font-size: var(--font-base);
-  line-height: var(--leading-base);
+  line-height: var(--leading-tight);
   text-transform: uppercase;
 }
 
@@ -208,175 +244,6 @@ a:active {
   outline: none;
 }
 
-/* Forms
---------------------------------------------- */
-button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
-  cursor: pointer;
-  border: none;
-  border-radius: none;
-  background-color: rgba(var(--bg-dark), 1);
-  color: rgb(var(--color-light));
-  line-height: inherit;
-  padding: 0.5rem 1rem;
-}
-
-button:hover,
-input[type='button']:hover,
-input[type='reset']:hover,
-input[type='submit']:hover {
-  background-color: rgba(var(--bg-dark), 0.75);
-  border: none;
-}
-
-button:active,
-button:focus,
-input[type='button']:active,
-input[type='button']:focus,
-input[type='reset']:active,
-input[type='reset']:focus,
-input[type='submit']:active,
-input[type='submit']:focus {
-  background-color: rgba(var(--bg-dark), 0.75);
-  border: none;
-}
-
-input[type='text'],
-input[type='email'],
-input[type='url'],
-input[type='password'],
-input[type='search'],
-input[type='number'],
-input[type='tel'],
-input[type='range'],
-input[type='date'],
-input[type='month'],
-input[type='week'],
-input[type='time'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='color'],
-textarea {
-  background: rgba(var(--color-dark), 0.1);
-  color: rgba(var(--color-dark), 0.75);
-  border: 1px solid rgba(var(--bg-dark), 0.25);
-  border-radius: var(--rounded);
-  padding: 0.25rem 0.75rem;
-}
-
-input[type='text']:focus,
-input[type='email']:focus,
-input[type='url']:focus,
-input[type='password']:focus,
-input[type='search']:focus,
-input[type='number']:focus,
-input[type='tel']:focus,
-input[type='range']:focus,
-input[type='date']:focus,
-input[type='month']:focus,
-input[type='week']:focus,
-input[type='time']:focus,
-input[type='datetime']:focus,
-input[type='datetime-local']:focus,
-input[type='color']:focus,
-textarea:focus {
-  border-color: rgba(var(--color-dark), 0.5);
-  color: rgba(var(--color-dark), 1);
-  outline: 0;
-}
-
-select {
-  border: 1px solid #ccc;
-}
-
-textarea {
-  width: 100%;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-input::placeholder,
-textarea::placeholder {
-  opacity: 1;
-  /* 1 */
-  color: rgba(var(--color-dark), 0.25);
-  /* 2 */
-}
-
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
-
-/* Site
---------------------------------------------- */
-
-.site {
-  max-width: var(--max-w-full);
-  margin: 0 auto;
-}
-
-/* Underline
---------------------------------------------- */
-
-.underline {
-  text-decoration: underline;
-  text-underline-offset: 0.25rem;
-}
-
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
-
-/* Accessibility
---------------------------------------------- */
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-  word-wrap: normal !important;
-}
-
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  clip-path: none;
-  color: #21759b;
-  display: block;
-  font-size: 0.875rem;
-  font-weight: 700;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-}
-
-/* Do not show the outline on the skip link target. */
-#primary[tabindex='-1']:focus {
-  outline: 0;
-}
-
 /* Buttons
 --------------------------------------------- */
 
@@ -454,3 +321,174 @@ textarea::placeholder {
   color: rgba(var(--color-light), 1);
 }
 
+/* Forms
+--------------------------------------------- */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  border-radius: none;
+  background-color: rgba(var(--bg-dark), 1);
+  color: rgb(var(--color-light));
+  line-height: inherit;
+  padding: 0.5rem 1rem;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: rgba(var(--bg-dark), 0.75);
+  border: none;
+}
+
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  background-color: rgba(var(--bg-dark), 0.75);
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  background: rgba(var(--color-dark), 0.1);
+  color: rgba(var(--color-dark), 0.75);
+  border: 1px solid rgba(var(--bg-dark), 0.25);
+  border-radius: var(--rounded);
+  padding: 0.25rem 0.75rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  border-color: rgba(var(--color-dark), 0.5);
+  color: rgba(var(--color-dark), 1);
+  outline: 0;
+}
+
+select {
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: rgba(var(--color-dark), 0.25);
+  /* 2 */
+}
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+
+/* Underline
+--------------------------------------------- */
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Misc
+--------------------------------------------------------------*/
+
+app-main::after,
+app-info::after {
+  content: "";
+  display: block;
+  height: 107.5px;
+}

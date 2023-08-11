@@ -1,0 +1,13 @@
+.info>.container {
+  max-width: var(--max-w-full);
+  margin: 1.5rem auto;
+  padding: 0 24px;
+}
+
+.info p:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.info a {
+  text-decoration: underline;
+}

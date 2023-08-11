@@ -14,7 +14,7 @@ export class ProgramDataService {
         {
           type: 'concerts',
           items: [
-            { time: '20:00', description: '"Zero" της Φένιας Χρήστου, με την ίδια (πιάνο, τραγούδι και φωνητικά), τον Alexis Bove (βιολοντσέλο) και τον Χρήστο Γαρμπιδάκη (laptop)' },
+            { time: '20:00', description: '“Zero” της Φένιας Χρήστου, με την ίδια (πιάνο, τραγούδι και φωνητικά), τον Alexis Bove (βιολοντσέλο) και τον Χρήστο Γαρμπιδάκη (laptop)' },
             { time: '21:00', description: 'Σταύρος Λάντσιας (πιάνο)' }
           ]
         }
@@ -28,8 +28,8 @@ export class ProgramDataService {
         {
           type: 'workshops',
           items: [
-            { time: '12:00', description: '"Extended cello technics and its use in the 20th and 21st century works", με τον Alexis Bove' },
-            { time: '14:00', description: '"Πιάνο & Ηλεκτρονικά Μέσα (Ableton Live, Virtual Instruments...) στη μουσική παραγωγή", με τον Χρήστο Γαρμπιδάκη, τον Νίκο Σωτηρόπουλο και τη Φένια Χρήστου' }
+            { time: '12:00', description: '“Extended cello technics and its use in the 20th and 21st century works”, με τον Alexis Bove' },
+            { time: '14:00', description: '“Πιάνο & Ηλεκτρονικά Μέσα (Ableton Live, Virtual Instruments...) στη μουσική παραγωγή”, με τον Χρήστο Γαρμπιδάκη, τον Νίκο Σωτηρόπουλο και τη Φένια Χρήστου' }
           ]
         },
         {
@@ -49,7 +49,7 @@ export class ProgramDataService {
         {
           type: 'workshops',
           items: [
-            { time: '12:00', description: '"Τραγουδοποιία - Μελοποίηση" με τη Φένια Χρήστου' },
+            { time: '12:00', description: '“Τραγουδοποιία - Μελοποίηση” με τη Φένια Χρήστου' },
           ]
         },
         {
