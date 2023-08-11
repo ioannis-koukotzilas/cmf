@@ -1,0 +1,22 @@
+<p>program works!</p>
+
+<div class="days-list">
+    <ul>
+        <li *ngFor="let day of days" [class.selected]="day === selectedDay" (click)="selectDay(day)">
+            {{ day.name }}
+        </li>
+    </ul>
+</div>
+<div class="day-info" *ngIf="selectedDay">
+    <h3>{{ selectedDay.name }}</h3>
+
+    <div *ngFor="let event of selectedDay.events">
+        <h4 *ngIf="event.type === 'workshops'">Εργαστηρια</h4>
+        <h4 *ngIf="event.type === 'concerts'">Συναυλίες</h4>
+        <ul>
+            <li *ngFor="let item of event.items">
+                {{ item.time }}: {{ item.description }}
+            </li>
+        </ul>
+    </div>
+</div>
