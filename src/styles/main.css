@@ -491,5 +491,11 @@ app-artists::after,
 app-info::after {
   content: "";
   display: block;
-  height: 107.5px;
+  height: 78px;
+}
+
+.loading {
+  max-width: var(--max-w-full);
+  margin: 1.5rem auto;
+  padding: 0 24px;
 }

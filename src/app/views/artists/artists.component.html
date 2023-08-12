@@ -1,17 +1,25 @@
-<div class="artists">
-  <div class="container">
-    <div class="title">Καλλιτέχνες</div>
+<div *ngIf="!isLoading; else loadingTemplate">
+  <div class="artists">
+    <div class="container">
+      <div class="title">Καλλιτέχνες</div>
 
-    <ul>
-      <li class="artist" *ngFor="let artist of artists">
-        <div class="name" *ngIf="artist.website">
-          <a [href]="artist.website" target="_blank">{{ artist.name }}</a>
-        </div>
+      <ul>
+        <li class="artist" *ngFor="let artist of artists">
+          <div class="name" *ngIf="artist.website">
+            <a [href]="artist.website" target="_blank">{{ artist.name }}</a>
+          </div>
 
-        <div class="name" *ngIf="!artist.website">{{ artist.name }}</div>
+          <div class="name" *ngIf="!artist.website">{{ artist.name }}</div>
 
-        <div class="description">{{ artist.description }}</div>
-      </li>
-    </ul>
+          <div class="description">{{ artist.description }}</div>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
+
+<ng-template #loadingTemplate>
+  <div class="loading">
+    Loading...
+  </div>
+</ng-template>

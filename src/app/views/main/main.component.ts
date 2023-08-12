@@ -9,9 +9,15 @@ import { environment } from 'src/environments/environment';
 })
 export class MainComponent {
 
+  isLoading = true;
+
   constructor(private titleService: Title) { }
 
   ngOnInit(): void {
     this.titleService.setTitle(`${environment.appTitle} - Αρχική`);
+
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 300);
   }
 }

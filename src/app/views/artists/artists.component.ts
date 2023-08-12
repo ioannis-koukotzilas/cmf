@@ -11,6 +11,8 @@ import { ArtistsDataService } from './artists-data.service';
 })
 export class ArtistsComponent implements OnInit {
 
+  isLoading = true;
+
   artists: Artist[] = [];
 
   constructor(private titleService: Title, private artistsDataService: ArtistsDataService) { }
@@ -19,5 +21,9 @@ export class ArtistsComponent implements OnInit {
     this.titleService.setTitle(`${environment.appTitle} - Καλλιτέχνες`);
 
     this.artists = this.artistsDataService.getArtists();
+
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 300);
   }
 }

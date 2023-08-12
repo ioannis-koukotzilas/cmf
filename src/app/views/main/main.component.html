@@ -1,8 +1,16 @@
-<div class="event-details">
-  <div class="container">
-    <div class="date">05-06-07 Σεπτεμβρίου 2023</div>
-    <div class="location">Θέατρο “Μίκης Θεοδωράκης”</div>
+<div *ngIf="!isLoading; else loadingTemplate">
+  <div class="event-details">
+    <div class="container">
+      <div class="date">05-06-07 Σεπτεμβρίου 2023</div>
+      <div class="location">Θέατρο “Μίκης Θεοδωράκης”</div>
+    </div>
   </div>
+
+  <app-program></app-program>
 </div>
 
-<app-program></app-program>
+<ng-template #loadingTemplate>
+  <div class="loading">
+    Loading...
+  </div>
+</ng-template>

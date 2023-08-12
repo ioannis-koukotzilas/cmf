@@ -1,14 +1,21 @@
-<div class="contact">
-  <div class="container">
-    <div class="title">Επικοινωνία</div>
+<div *ngIf="!isLoading; else loadingTemplate">
+  <div class="contact">
+    <div class="container">
+      <div class="title">Επικοινωνία</div>
 
-    <p>Email:<br>
-      <a href="mailto:info@chaniamusicfestival.com">info@chaniamusicfestival.com</a><br>
-      <a href="mailto:fraternalairpro@gmail.com">fraternalairpro@gmail.com</a>
-    </p>
+      <p>Email:<br>
+        <a href="mailto:fraternalairpro@gmail.com">fraternalairpro@gmail.com</a>
+      </p>
 
-    <p>Τηλ:<br>
-      <a href="tel:+306972848636">+306972848636</a>
-    </p>
+      <p>Τηλ:<br>
+        <a href="tel:+306972848636">+306972848636</a>
+      </p>
+    </div>
   </div>
 </div>
+
+<ng-template #loadingTemplate>
+  <div class="loading">
+    Loading...
+  </div>
+</ng-template>

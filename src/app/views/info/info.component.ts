@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
 
@@ -7,11 +7,17 @@ import { environment } from 'src/environments/environment';
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.css']
 })
-export class InfoComponent {
+export class InfoComponent implements OnInit {
+
+  isLoading = true;
 
   constructor(private titleService: Title) { }
 
   ngOnInit(): void {
     this.titleService.setTitle(`${environment.appTitle} - Πληροφορίες & Εισιτήρια`);
+
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 300);
   }
 }
