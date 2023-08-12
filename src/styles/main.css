@@ -74,7 +74,7 @@ textarea {
   font-weight: var(--font-light);
   font-size: var(--font-base);
   line-height: var(--leading-tight);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h1,

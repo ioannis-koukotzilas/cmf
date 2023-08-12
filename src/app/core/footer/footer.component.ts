@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var Marquee3k: any;
-
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -9,9 +7,11 @@ declare var Marquee3k: any;
 })
 export class FooterComponent implements OnInit {
 
+  currentYear!: number;
+
   constructor() { }
 
   ngOnInit(): void {
-    Marquee3k.init();
+    this.currentYear = new Date().getFullYear();
   }
 }

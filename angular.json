@@ -30,9 +30,7 @@
               "src/styles/main.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "./node_modules/marquee3000/marquee3k.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

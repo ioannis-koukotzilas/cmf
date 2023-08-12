@@ -15,6 +15,10 @@
   gap: 1.5rem;
 }
 
+.artists .artist .name {
+  margin-bottom: 0.25rem;
+}
+
 .artists .artist .description {
   margin-left: 1.5rem;
 }

@@ -1,22 +1,13 @@
-.marquee {
+.site-footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
-}
-
-.marquee3k {
-  overflow: hidden;
   background-color: rgba(var(--color-dark), 0.85);
-  padding: 0.75rem 0 0.5rem;
 }
 
-.marquee3k__copy {
-  padding-right: 30px;
-  box-sizing: border-box;
-}
-
-.marquee3k img {
-  width: 1200px;
-  max-width: unset;
-  height: auto;
+.site-footer > .container {
+  max-width: var(--max-w-full);
+  margin: 0 auto;
+  padding: 24px;
 }
