@@ -65,4 +65,5 @@
 
 .site-header .main-nav a {
   text-decoration: underline;
+  text-underline-offset: 0.15rem;
 }
