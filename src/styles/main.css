@@ -487,6 +487,7 @@ textarea::placeholder {
 --------------------------------------------------------------*/
 
 app-main::after,
+app-artists::after,
 app-info::after {
   content: "";
   display: block;

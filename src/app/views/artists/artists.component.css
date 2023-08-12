@@ -1,19 +1,25 @@
-.contact > .container {
+.artists > .container {
   max-width: var(--max-w-full);
   margin: 1.5rem auto;
   padding: 0 24px;
 }
 
-.contact .title {
+.artists .title {
   font-size: var(--font-2xl);
   margin-bottom: 1.5rem;
 }
 
-.contact p:not(:last-child) {
-  margin-bottom: 1.5rem;
+.artists ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.contact a {
+.artists .artist .description {
+  margin-left: 1.5rem;
+}
+
+.artists .artist a {
   text-decoration: underline;
   text-underline-offset: 0.15rem;
 }

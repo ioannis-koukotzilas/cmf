@@ -9,6 +9,7 @@ import { MainComponent } from './views/main/main.component';
 import { ProgramComponent } from './views/program/program.component';
 import { InfoComponent } from './views/info/info.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { ArtistsComponent } from './views/artists/artists.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactComponent } from './views/contact/contact.component';
     MainComponent,
     ProgramComponent,
     InfoComponent,
-    ContactComponent
+    ContactComponent,
+    ArtistsComponent
   ],
   imports: [
     BrowserModule,
