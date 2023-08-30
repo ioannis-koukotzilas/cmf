@@ -4,11 +4,6 @@
   padding: 0 24px;
 }
 
-.sponsors .title {
-  font-size: var(--font-2xl);
-  margin-bottom: 1.5rem;
-}
-
 .sponsors img {
   max-width: var(--max-w-lg);
 }
