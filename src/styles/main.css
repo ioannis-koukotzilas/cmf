@@ -69,7 +69,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: rgba(var(--color-light), 1);
+  color: rgba(var(--color-dark), 1);
   font-family: var(--font-sans-extended);
   font-weight: var(--font-light);
   font-size: var(--font-base);
@@ -179,7 +179,7 @@ address {
 --------------------------------------------- */
 body {
   min-height: 100vh;
-  background: rgba(var(--color-dark), 1);
+  background: rgba(var(--color-light), 1);
 }
 
 hr {
@@ -215,11 +215,6 @@ svg {
   display: block;
 }
 
-figure {
-  margin: 0;
-  background-color: rgba(var(--bg-black), 1);
-}
-
 table {
   margin: 0;
   width: 100%;
@@ -230,17 +225,17 @@ table {
 a {
   display: inline-block;
   text-decoration: none;
-  color: rgba(var(--color-light), 1);
+  color: rgba(var(--color-dark), 1);
 }
 
 a:visited {
-  color: rgba(var(--color-light), 1);
+  color: rgba(var(--color-dark), 1);
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: rgba(var(--color-light), 0.75);
+  color: rgba(var(--color-dark), 0.75);
   outline: none;
 }
 
@@ -257,20 +252,20 @@ a:active {
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: rgba(var(--color-light), 1);
-  color: rgba(var(--color-light), 1);
+  border-color: rgba(var(--color-dark), 1);
+  color: rgba(var(--color-dark), 1);
 }
 
 .btn-transparent:visited {
-  color: rgba(var(--color-light), 1);
-  border-color: rgba(var(--color-light), 1);
+  color: rgba(var(--color-dark), 1);
+  border-color: rgba(var(--color-dark), 1);
 }
 
 .btn-transparent:hover,
 .btn-transparent:focus,
 .btn-transparent:active {
-  border-color: rgba(var(--color-light), 0.75);
-  color: rgba(var(--color-light), 0.75);
+  border-color: rgba(var(--color-dark), 0.75);
+  color: rgba(var(--color-dark), 0.75);
 }
 
 .btn-dark {
@@ -488,7 +483,9 @@ textarea::placeholder {
 
 app-main::after,
 app-artists::after,
-app-info::after {
+app-info::after,
+app-contact::after,
+app-sponsors::after {
   content: "";
   display: block;
   height: 78px;

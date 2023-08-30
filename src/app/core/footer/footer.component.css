@@ -3,7 +3,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(var(--color-dark), 0.85);
+  background-color: rgba(var(--color-light), 0.85);
 }
 
 .site-footer > .container {

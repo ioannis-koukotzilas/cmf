@@ -4,6 +4,10 @@
   padding: 0 24px;
 }
 
+.event-details .title {
+  font-size: var(--font-2xl);
+}
+
 .event-details .date {
   font-size: var(--font-2xl);
 }

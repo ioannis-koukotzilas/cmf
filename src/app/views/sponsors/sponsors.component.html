@@ -1,0 +1,14 @@
+<div *ngIf="!isLoading; else loadingTemplate">
+  <div class="sponsors">
+    <div class="container">
+      <div class="title">Χορηγοί</div>
+      <img src="assets/svg/sponsors.svg" alt="Χορηγοί">
+    </div>
+  </div>
+</div>
+
+<ng-template #loadingTemplate>
+  <div class="loading">
+    Loading...
+  </div>
+</ng-template>

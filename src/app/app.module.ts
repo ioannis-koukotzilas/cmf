@@ -10,6 +10,7 @@ import { ProgramComponent } from './views/program/program.component';
 import { InfoComponent } from './views/info/info.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { ArtistsComponent } from './views/artists/artists.component';
+import { SponsorsComponent } from './views/sponsors/sponsors.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ArtistsComponent } from './views/artists/artists.component';
     ProgramComponent,
     InfoComponent,
     ContactComponent,
-    ArtistsComponent
+    ArtistsComponent,
+    SponsorsComponent
   ],
   imports: [
     BrowserModule,
